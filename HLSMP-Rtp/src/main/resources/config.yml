@@ -1,0 +1,91 @@
+####################################################################
+####################################################################
+####################################################################
+#██    ██ ██    ██ ██      ██ ███    ███  █████  ██ ████████ ███████
+#██    ██ ██    ██ ██      ██ ████  ████ ██   ██ ██    ██    ██
+#██    ██ ██    ██ ██      ██ ██ ████ ██ ███████ ██    ██    █████
+#██  ██   ██  ██  ██      ██ ██  ██  ██ ██   ██ ██    ██    ██
+#████     ████   ███████ ██ ██      ██ ██   ██ ██    ██    ███████
+####################################################################
+####################################################################
+####################################################################
+
+#Plugin RTP - HLSMP
+
+#Plugin kiểu DonutSMP RTP, bạn có thể chỉnh sửa toàn bộ tin nhắn trong lang.yml.
+
+# các block sẽ bị cấm di chuyển ngẫu nhiên đến.
+blacklisted-blocks:
+  - LAVA
+  - WATER
+
+blacklisted-biomes:
+  - BEACH
+
+#Khoảng cách được phép di chuyển mà không bị hủy teleport.
+allowed-walk-range: 3
+
+#thời gian chờ (giây) trước khi teleport
+wait-time-seconds: 5
+
+#thời gian hồi chiêu (giây)
+default-cooldown-seconds: 60
+
+#số vị trí sẽ được tính toán trước?
+#tăng số này nếu thường gặp thông báo "Không tìm được vị trí an toàn!"
+#nếu sắp mở server cho nhiều người chơi, nên đặt số này cao hơn
+pregenerate-location-amount: 10
+
+#các hiệu ứng này sẽ được áp dụng khi người chơi random teleport.
+effects-on-random-teleport:
+  '1':
+    type: ABSORPTION
+    level: 10
+    seconds: 10
+
+world-settings:
+  overworld-region:
+    world: world
+    min-x: -50000
+    max-x: 50000
+    min-z: -50000
+    max-z: 50000
+
+  nether-region:
+    world: world_nether
+    min-x: -50000
+    max-x: 50000
+    min-z: -50000
+    max-z: 50000
+
+  end-region:
+    world: world_the_end
+    min-x: -50000
+    max-x: 50000
+    min-z: -50000
+    max-z: 50000
+
+#Cần có WorldGuard để hoạt động.
+#Placeholder cho countdown: %donutrtp_zone_countdown_<name>%
+rtp-zones:
+  '1':
+    enabled: true
+    #Tên region trong WorldGuard.
+    zone-region: rtpzone
+    zone-world: world
+    #Đơn vị: giây.
+    cooldown-time: 60
+    minimum-players: 1
+    arena-distance: 10
+    glowing-duration: 6
+    #Thế giới sẽ random teleport đến.
+    rtp-worlds:
+      - world
+
+sound:
+  teleport_cooldown: block.note_block.pling
+  teleporting: entity.enderman.teleport
+  button_click: ui.button.click
+  teleport_success: entity.player.levelup
+  teleport_fail: entity.villager.no
+  reload: entity.experience_orb.pickup
