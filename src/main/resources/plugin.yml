@@ -1,0 +1,20 @@
+name: HLSMP-Rtp
+version: '1.2'
+main: de.elivb.donutRTP.RTP
+api-version: '1.21'
+description: ᴘʟᴜɢɪɴ ʀᴛᴘ ᴄʜᴏ ᴍáʏ ᴄʜủ ʜʟsᴍᴘ
+author: HLSMP
+folia-supported: true
+softdepend: [LuckPerms]
+
+commands:
+  rtp:
+  rtpqueue:
+
+permissions:
+  rtp.use:
+    default: true
+  rtp.admin:
+    default: op
+  rtp.bypass:
+    default: op
