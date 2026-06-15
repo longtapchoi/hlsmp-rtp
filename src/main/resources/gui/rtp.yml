@@ -1,0 +1,33 @@
+title: '&8ᴅɪ ᴄʜᴜʏểɴ ɴɢẫᴜ ɴʜɪêɴ'
+rows: 3
+worlds:
+  overworld:
+    slot: 11
+    world: world
+    material: GRASS_BLOCK
+    name: '&#00FF89ᴛʜế ɢɪớɪ ɢốᴄ'
+    lore:
+      - '&fNhấn để di chuyển ngẫu nhiên'
+      - ''
+      - '&7Người chơi (&#00A0FC%players%&7)'
+    permission: ''
+  nether:
+    slot: 13
+    world: world_nether
+    material: NETHERRACK
+    name: '&#00FF89ɴᴇᴛʜᴇʀ'
+    lore:
+      - '&fNhấn để di chuyển ngẫu nhiên'
+      - ''
+      - '&7Người chơi (&#00A0FC%players%&7)'
+    permission: ''
+  end:
+    slot: 15
+    world: world_the_end
+    material: END_STONE
+    name: '&#00FF89ᴇɴᴅ'
+    lore:
+      - '&fNhấn để di chuyển ngẫu nhiên'
+      - ''
+      - '&7Người chơi (&#00A0FC%players%&7)'
+    permission: ''
