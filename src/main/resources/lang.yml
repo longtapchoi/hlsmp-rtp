@@ -1,0 +1,72 @@
+#Tại đây bạn có thể chỉnh sửa toàn bộ tin nhắn và action bar của plugin
+
+#Tin nhắn RTP
+messages:
+  teleport-on-cooldown-message: '&cBạn phải chờ %wait_time%s trước khi có thể di chuyển ngẫu nhiên lại.'
+  teleported-message: '&aDi chuyển ngẫu nhiên thành công!'
+  fail-message: '&cKhông tìm được vị trí an toàn! &7(Không phải lỗi)'
+  no-world-permission-message: '&cThế giới này không khả dụng!'
+  no-permission: "&cBạn không có quyền sử dụng lệnh này!"
+  player-only: "&cLệnh này chỉ dành cho người chơi!"
+  teleporting-cancel-message: '&cĐã hủy!'
+  reload: "&aHLSMP-Rtp đã được tải lại!"
+  zone-enter-message: '&fBạn đã vào khu vực &c&lRTP&f!'
+  zone-leave-message: '&fBạn đã ra khỏi khu vực &c&lRTP&f!'
+
+  #Tin nhắn hàng đợi
+  rtp-join-queue-title: '&a&lHàng Đợi RTP'
+  rtp-join-queue-sub-title: '&fBạn đã vào &a&lHàng Đợi RTP'
+  rtp-join-queue-message: '&fBạn đã vào &a&lHàng Đợi RTP!'
+
+  rtp-first-join-queue-broadcast:
+    - '&f'
+    - '&a&l⚔ HÀNG ĐỢI RTP ⚔'
+    - '&f'
+    - '&a%player% &fđang chờ đối thủ trong &aHàng Đợi RTP'
+    - '&f'
+    - '&a&l♦ &7Tham gia bằng &7&n/rtpqueue'
+    - '&f'
+
+  rtp-quit-queue-title: '&a&lHàng Đợi RTP'
+  rtp-quit-queue-sub-title: '&fBạn đã rời &a&lHàng Đợi RTP'
+  rtp-quit-queue-message: '&fBạn đã rời &a&lHàng Đợi RTP!'
+  rtp-queue-countdown-message: '&fTrận đấu bắt đầu trong &a&l%seconds%s'
+  rtp-queue-countdown-title: '&a&lHàng Đợi RTP'
+  rtp-queue-countdown-sub-title: '&fDi chuyển trong &a&l%seconds%s'
+  rtp-queue-teleporting-title: '&a&lHàng Đợi RTP'
+  rtp-queue-teleporting-sub-title: '&fBạn đã được di chuyển'
+  rtp-cannot-leave-match-found: '&cBạn không thể rời hàng đợi vì đã tìm thấy trận đấu!'
+  rtp-cannot-leave-in-match: '&cBạn không thể rời hàng đợi vì đang trong trận đấu!'
+  rtp-already-in-match: '&cBạn đang trong một trận đấu! Hãy chờ đến khi kết thúc.'
+  rtp-cooldown-message: '&cBạn phải chờ trước khi vào hàng đợi lại!'
+  rtp-opponent-left: '&cĐối thủ của bạn đã rời trận!'
+  rtp-match-ended: '&aTrận đấu của bạn đã kết thúc. Bạn có thể vào hàng đợi lại.'
+
+action-bars:
+  teleported-message: '&aDi chuyển ngẫu nhiên thành công!'
+  fail-message: '&cKhông tìm được vị trí an toàn! &7(Không phải lỗi)'
+  reload: "&aHLSMP-Rtp đã được tải lại!"
+  teleporting-cancel-message: '&cĐã hủy!'
+  rtp-queue-action-bar: '&a⚔ &fCần thêm &a%players% &fngười chơi! &7&n(/rtpqueue)'
+  rtp-quit-queue-action-bar: '&fBạn đã rời &a&lHàng Đợi RTP!'
+  rtp-queue-countdown-action-bar: '&fTrận đấu bắt đầu trong &a&l%seconds%s'
+  rtp-queue-teleporting-action-bar: '&fĐã tìm thấy trận đấu! Chúc may mắn!'
+
+cooldown:
+  module:
+    chat:
+      enabled: true
+      message:
+        - "&fDi chuyển ngẫu nhiên trong &b%time%s"
+    actionbar:
+      enabled: true
+      message:
+        - "&fDi chuyển ngẫu nhiên trong &b%time%s"
+    title:
+      enabled: false
+      message:
+        - ""
+    subtitle:
+      enabled: false
+      message:
+        - ""
